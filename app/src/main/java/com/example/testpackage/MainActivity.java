@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 
 import com.example.main_sdk.Sdk;
-import com.example.sub_sdk.SubSdkFeature;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.RequiresApi;
@@ -51,16 +50,8 @@ public class MainActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
-                SubSdkFeature subSdkFeature = new SubSdkFeature();
-                subSdkFeature.setListener(new Function<Boolean, Void>() {
-                    @Override
-                    public Void apply(Boolean aBoolean) {
-                        Snackbar.make(view, "Sub SDK 呼び出し成功！", Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
-                        return null;
-                    }
-                });
-                Sdk.shared.useFeature(subSdkFeature);
+                Snackbar.make(view, "Sub SDKは存在しない", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
     }
