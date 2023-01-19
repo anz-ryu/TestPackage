@@ -1,4 +1,4 @@
-package com.example.main_sdk;
+package com.example.sub_sdk_helper;
 
 import java.util.function.Function;
 

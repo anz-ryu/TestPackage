@@ -1,11 +1,10 @@
 package com.example.main_sdk;
 
 import android.os.Build;
-import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import java.util.function.Function;
+import com.example.sub_sdk_helper.FeatureProtocol;
 
 public class Sdk {
     public static Sdk shared = new Sdk();

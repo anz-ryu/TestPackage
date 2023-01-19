@@ -4,7 +4,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.main_sdk.FeatureProtocol;
+import com.example.sub_sdk_helper.FeatureProtocol;
 
 import java.util.Objects;
 import java.util.function.Function;
